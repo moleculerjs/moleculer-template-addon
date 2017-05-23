@@ -1,0 +1,20 @@
+{
+  "name": "moleculer-template-addon",
+  "version": "1.0.0",
+  "description": "Addon template for moleculer-cli",
+  "main": "meta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ice-services/moleculer-template-addon.git"
+  },
+  "keywords": [],
+  "author": "Ice Services",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ice-services/moleculer-template-addon/issues"
+  },
+  "homepage": "https://github.com/ice-services/moleculer-template-addon#readme"
+}
