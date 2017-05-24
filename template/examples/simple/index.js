@@ -5,7 +5,8 @@ let MyService 			= require("../../index");
 
 // Create broker
 let broker = new ServiceBroker({
-	logger: console
+	logger: console,
+	logLevel: "debug"
 });
 
 // Load my service
