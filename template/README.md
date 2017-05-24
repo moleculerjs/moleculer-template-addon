@@ -1,5 +1,3 @@
-![Moleculer logo](http://moleculer.services/images/banner.png)
-
 # {{projectName}} [![NPM version](https://img.shields.io/npm/v/{{projectName}}.svg)](https://www.npmjs.com/package/{{projectName}})
 
 {{projectDescription}}
