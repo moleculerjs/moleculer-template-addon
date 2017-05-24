@@ -7,12 +7,39 @@
 ## Features
 
 ## Install
+
+```bash
+$ npm install {{projectName}} --save
 ```
-npm install {{projectName}} --save
+or
+```bash
+$ yarn add {{projectName}}
 ```
 
 ## Usage
 
+```js
+"use strict";
+
+const { ServiceBroker } = require("moleculer");
+const broker = new ServiceBroker();
+
+// Load service
+broker.createService(require("{{projectName}}"));
+
+// Call
+broker.call("{{serviceName}}.xyz", {}).then(console.log);
+/* Result: ??? */
+
+```
+
+## Settings
+| Property | Description |
+| -------- | ----------- |
+
+## Actions
+| Name | Params | Result | Description |
+| ---- | ------ | ------ | ----------- |
 
 # Test
 ```
@@ -24,9 +51,6 @@ In development with watching
 ```
 $ npm run ci
 ```
-
-# Contribution
-Please send pull requests improving the usage and fixing bugs, improving documentation and providing better examples, or providing some testing, because these things are important.
 
 # License
 The project is available under the [MIT license](https://tldrlegal.com/license/mit-license).
