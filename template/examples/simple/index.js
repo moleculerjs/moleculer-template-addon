@@ -18,7 +18,7 @@ broker.start().then(() => {
 	// Call action
 	broker
 		.call("{{serviceName}}.test", { name: "John Doe" })
-		.then(broker.logger.info)
-		.catch(broker.logger.error);
+		.then(console.log)
+		.catch(console.error);
 
 });
