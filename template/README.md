@@ -34,8 +34,8 @@ broker.call("{{serviceName}}.xyz", {}).then(console.log);
 ```
 
 ## Settings
-| Property | Description |
-| -------- | ----------- |
+| Property | Type | Description |
+| -------- | ---- | ----------- |
 
 ## Actions
 | Name | Params | Result | Description |
