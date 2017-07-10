@@ -37,20 +37,20 @@ module.exports = {
 	 * Service created lifecycle event handler
 	 */
 	created() {
-
+		return this.Promise.resolve();
 	},
 
 	/**
 	 * Service started lifecycle event handler
 	 */
 	started() {
-
+		return this.Promise.resolve();
 	},
 
 	/**
 	 * Service stopped lifecycle event handler
 	 */
 	stopped() {
-
+		return this.Promise.resolve();
 	}
 };

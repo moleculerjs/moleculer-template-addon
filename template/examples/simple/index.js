@@ -10,7 +10,13 @@ let broker = new ServiceBroker({
 });
 
 // Load my service
-broker.createService(MyService);
+broker.createService({
+	name: "myService",
+	mixins: [MyService],
+	settings: {
+		
+	}
+});
 
 // Start server
 broker.start().then(() => {
