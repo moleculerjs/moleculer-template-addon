@@ -11,7 +11,7 @@ let broker = new ServiceBroker({
 
 // Load my service
 broker.createService({
-	name: "myService",
+	name: "{{serviceName}}",
 	mixins: [MyService],
 	settings: {
 		
