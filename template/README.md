@@ -4,42 +4,126 @@
 
 {{projectDescription}}
 
-## Features
+# Features
 
-## Install
+# Install
 
 ```bash
 $ npm install {{projectName}} --save
 ```
-or
-```bash
-$ yarn add {{projectName}}
-```
 
-## Usage
+# Usage
 
-```js
-"use strict";
+<!-- AUTO-CONTENT-START:USAGE -->
+<!-- AUTO-CONTENT-END:USAGE -->
 
-const { ServiceBroker } = require("moleculer");
-const broker = new ServiceBroker();
+<!-- AUTO-CONTENT-TEMPLATE:USAGE
+{{#hasExamples}}
+{{#each examples}}
+{{{this}}}
+{{/each}}
+{{/hasExamples}}
+-->
 
-// Load service
-broker.createService(require("{{projectName}}"));
 
-// Call
-broker.call("{{serviceName}}.xyz", {}).then(console.log);
-/* Result: ??? */
 
-```
+# Settings
 
-## Settings
-| Property | Type | Description |
-| -------- | ---- | ----------- |
+<!-- AUTO-CONTENT-START:SETTINGS -->
+<!-- AUTO-CONTENT-END:SETTINGS -->
 
-## Actions
-| Name | Params | Result | Description |
-| ---- | ------ | ------ | ----------- |
+<!-- AUTO-CONTENT-TEMPLATE:SETTINGS
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+{{#each this}}
+| `{{name}}` | {{type}} | {{defaultValue}} | {{description}} |
+{{/each}}
+{{^this}}
+*No settings.*
+{{/this}}
+
+-->
+
+# Actions
+<!-- AUTO-CONTENT-START:ACTIONS -->
+<!-- AUTO-CONTENT-END:ACTIONS -->
+
+<!-- AUTO-CONTENT-TEMPLATE:ACTIONS
+{{#each this}}
+## `{{name}}` {{#each badges}}{{this}} {{/each}}
+{{#since}}
+_<sup>Since: {{this}}</sup>_
+{{/since}}
+
+{{description}}
+
+### Parameters
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+{{#each params}}
+| `{{name}}` | {{type}} | {{defaultValue}} | {{description}} |
+{{/each}}
+{{^params}}
+*No input parameters.*
+{{/params}}
+
+{{#returns}}
+### Results
+**Type:** {{type}}
+
+{{description}}
+{{/returns}}
+
+{{#hasExamples}}
+### Examples
+{{#each examples}}
+{{this}}
+{{/each}}
+{{/hasExamples}}
+
+{{/each}}
+-->
+
+# Methods
+
+<!-- AUTO-CONTENT-START:METHODS -->
+<!-- AUTO-CONTENT-END:METHODS -->
+
+<!-- AUTO-CONTENT-TEMPLATE:METHODS
+{{#each this}}
+## `{{name}}` {{#each badges}}{{this}} {{/each}}
+{{#since}}
+_<sup>Since: {{this}}</sup>_
+{{/since}}
+
+{{description}}
+
+### Parameters
+| Property | Type | Default | Description |
+| -------- | ---- | ------- | ----------- |
+{{#each params}}
+| `{{name}}` | {{type}} | {{defaultValue}} | {{description}} |
+{{/each}}
+{{^params}}
+*No input parameters.*
+{{/params}}
+
+{{#returns}}
+### Results
+**Type:** {{type}}
+
+{{description}}
+{{/returns}}
+
+{{#hasExamples}}
+### Examples
+{{#each examples}}
+{{this}}
+{{/each}}
+{{/hasExamples}}
+
+{{/each}}
+-->
 
 # Test
 ```

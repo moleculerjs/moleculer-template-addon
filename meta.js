@@ -23,7 +23,7 @@ module.exports = function(values) {
 		completeMessage: `
 To get started:
 
-	npm run dev services/{{projectName}}
+	npm run dev {{projectName}}
 
 		`
 	};
