@@ -6,6 +6,12 @@
 
 "use strict";
 
+/**
+ * {{projectDescription}}
+ * 
+ * @name {{projectName}}
+ * @module Service
+ */
 module.exports = {
 
 	name: "{{serviceName}}",
@@ -21,6 +27,15 @@ module.exports = {
 	 * Actions
 	 */
 	actions: {
+
+		/**
+		 * Hello World test action
+		 * 
+		 * @actions
+		 * 
+		 * @param {String} name - Name of user
+		 * @returns {String}
+		 */
 		test(ctx) {
 			return "Hello " + (ctx.params.name || "Anonymous");
 		}
