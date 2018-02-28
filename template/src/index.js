@@ -1,6 +1,6 @@
 /*
  * {{projectName}}
- * Copyright (c) {{year}} Ice Services (https://github.com/ice-services/moleculer-addons)
+ * Copyright (c) {{year}} MoleculerJS (https://github.com/moleculerjs/moleculer-addons)
  * MIT Licensed
  */
 
